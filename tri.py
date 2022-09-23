@@ -20,10 +20,9 @@ def tri(l):
         for i in l:
             tri(i)
 
-
-
 if __name__=="__main__":
     # programme principal
-        l = gen_list()
-        tri(l)
-        print(f"{l=}")
+        L = gen_list()
+        for l in L:
+            tri(l)
+            print(f"{l=}")

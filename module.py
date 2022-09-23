@@ -25,7 +25,7 @@ def build(l0):
 
 def gen_list():
     nb_arg = len(sys.argv)
-
+    L = []
     if (nb_arg == 1):
         while True:
             line = input("? ").rstrip("\n").strip()
@@ -34,14 +34,15 @@ def gen_list():
             lline = re.split(r' +',line.rstrip("\n"))
             i=0
             l = build(lline)                      # récupération de la liste
-            return l
+            L.append(l)
     elif nb_arg == 2:
         #f = open(sys.argv[1], "r")
 
         with open(sys.argv[1], "r") as f:
             for line in f:
                 lline = re.split(r' +',line.rstrip("\n"))
-                return(build(lline))
+                L.append(build(lline))
     else:
         l_str = sys.argv[1:]
-        return build(l_str)
+        L.append(build(l_str))
+    return L

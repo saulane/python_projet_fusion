@@ -26,7 +26,8 @@ def minmax(l):
 
 if __name__=="__main__":
     # programme principal
-    l = gen_list()                 # récupération de la liste
-    maxi = []
-    minmax(l)
-    print(min(maxi))
+    L = gen_list()                 # récupération de la liste
+    for l in L:
+        maxi = []
+        minmax(l)
+        print(min(maxi))

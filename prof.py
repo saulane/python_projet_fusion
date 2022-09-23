@@ -31,6 +31,7 @@ def profondeur(l):
 
 if __name__=="__main__":
     # programme principal
-        l = gen_list()
-        print(f"{l=}")
-        print(f"{profondeur(l)=}")
+        L = gen_list()
+        for l in L:
+            print(f"{l=}")
+            print(f"{profondeur(l)=}")
