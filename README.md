@@ -1,1 +1,1 @@
-# Projet Python 1 Master DS Simon Ravé
+# Projet Python 1 Master DS Simon Ravé / Maxime Fouche
